@@ -1,0 +1,58 @@
+<html>
+
+<head>
+  <title>Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <table color="blue" border="1">
+
+    <font color="blue" size="+3" face="Times New Roman">
+      <div id="title">
+        <h2>Web Calculator</h2>
+      </div>
+    </font>
+
+    <font color="red" size="+3" face="Times New Roman">
+      <div id="plus"></div>
+      <div id="minus"></div>
+      <div id="mult"></div>
+      <div id="divi"></div>
+    </font>
+
+
+    <table border="1" width="70%" cellpadding="10">
+      <tr>
+        <td colspan="3"><input id="screen" type="text" class="box" name="Calculator" size="80" value="" /></td>
+      </tr>
+      <tr>
+        <td width=10%><button id="plus" name="+" onclick="addup();">+</button></td>
+        <td width=10%><button name="0" onclick="return setZero();">0</button>
+        <td width=10%><button id="minus" class="input" name="-" onclick="sub();">-</button>
+      </tr>
+      <tr>
+        <td width=10%><button id="mult" name="*" onclick="times();">*</button></td>
+        <td width=10%><button name="CLEAR" onclick="return clearScreen();">CLEAR</button>
+        <td width=10%><button id="divi" class="input" name="/" onclick="division();">/</button>
+      </tr>
+
+      <tr>
+        <td width=10%><button name="sqrt" onclick="roots();">SQRT</button></td>
+        <td width=10%><button name="answer" onclick="return answer();">=</button>
+        <td width=10%><button name="Backspace" onclick="backSpace();">Back</button></td>
+      </tr>
+      <tr>
+        <td width=10%><button name="SINE" onclick="sine();">sin</button></td>
+        <td width=10%><button name="tan" onclick="tang();">TAN</button></td>
+      </tr>
+
+
+
+    </table>
+
+  </table>
+</body>
+
+</html>
